@@ -1,6 +1,7 @@
 pacman::p_load(shiny,tidyverse,readxl,lubridate, data.table,here,DT, shinyWidgets, install = TRUE, update = getOption("pac_update"))
 
 shinydat<-fread(here("participants.csv"))|>
+  
   select(1:8)
 
 ui<-fluidPage(
