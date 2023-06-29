@@ -1,11 +1,13 @@
 pacman::p_load(shiny,tidyverse,readxl,lubridate, data.table,here,DT, shinyWidgets, install = TRUE, update = getOption("pac_update"))
 
 shinydat<-fread(here("participants.csv"))|>
-  
-  select(1:8)
+  select(1:8)|>
+  mutate(consentDate=as.Date(consentDate, "%d-%b-%y"),
+         enrollmentDate=as.Date(enrollmentDate, "%d-%b-%y"),
+         dateVac1Received=as.Date(dateVac1Received, "%d-%b-%y"))
 
 ui<-fluidPage(
-  titlePanel("VAC078 Participants Data"),
+  titlePanel("My Data"),
   sidebarLayout(
     sidebarPanel(
       #checkboxInput("checkbox", "Filter on Site", value = TRUE),

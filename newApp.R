@@ -1,6 +1,4 @@
 pacman::p_load(shiny,tidyverse,readxl,data.table, here, install = TRUE, update = getOption("pac_update"))
-shinydat<-fread(here("participants.csv"))|> 
-  select(1:8)
 ui<-fluidPage(
   titlePanel("Participants Dashboard!"),
   sidebarLayout(
