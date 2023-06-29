@@ -1,0 +1,14 @@
+name: my_shiny
+title: my_shiny
+username:
+account: charles-muiruri
+server: posit.cloud
+hostUrl: https://api.shinyapps.io/v1
+appId: 9036565
+bundleId: 7177916
+url: https://posit.cloud/content/5923789
+when: 1683283324.98959
+lastSyncTime: 1683283324.98962
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .gitattributes|app.R|app1.R|newApp.R|participants.xlsx
