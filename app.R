@@ -47,6 +47,6 @@ server <- function(input, output) {
              main = 'Histogram of waiting times')
     })
 }
-
+options(shiny.sanitize.errors = FALSE)
 # Run the application 
 shinyApp(ui = ui, server = server)

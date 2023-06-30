@@ -82,6 +82,6 @@ ui <- fluidPage(
 server <- function(input, output) {
   
 }
-
+options(shiny.sanitize.errors = FALSE)
 # Run the app ----
 shinyApp(ui = ui, server = server)

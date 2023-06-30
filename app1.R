@@ -55,5 +55,5 @@ server<-function(input, output,session){
     dataset
   })
 }
-
+options(shiny.sanitize.errors = FALSE)
 shinyApp(ui = ui, server = server)

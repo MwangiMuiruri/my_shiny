@@ -25,5 +25,5 @@ server<-function(input, output,session){
     paste("You have chosen a range that goes from", input$sliid[1],"to",input$sliid[2])
   })
 }
-
+options(shiny.sanitize.errors = FALSE)
 shinyApp(ui = ui, server = server)
