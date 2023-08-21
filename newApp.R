@@ -1,4 +1,4 @@
-pacman::p_load(shiny,tidyverse,readxl,data.table, here, install = TRUE, update = getOption("pac_update"))
+pacman::p_load(shiny,tidyverse,readxl,data.table, here, install = TRUE, update = getOption("p_update"))
 ui<-fluidPage(
   titlePanel("Participants Dashboard!"),
   sidebarLayout(
